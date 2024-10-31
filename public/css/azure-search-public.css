@@ -1,0 +1,35 @@
+/**
+ * This file includes all of the CSS for the public-facing functionality.
+ */
+
+.azure-search-result li {
+    list-style-type: none;
+    border: solid lightgrey thin;
+    padding: 8px;
+}
+
+.azure-search-navigation li {
+    list-style-type: none;
+    border: solid lightgrey thin;
+    padding: 8px;
+    display: inline;
+}
+
+.azure-search-navigation li.active {
+    background: #3279BB;
+}
+
+.azure-search-result .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.azure-search-result .loading {
+    -webkit-animation: azure-search-rotate 2s ease 2s infinite;
+}
+
+@-webkit-keyframes azure-search-rotate {
+    from { -webkit-transform: rotateX(0deg); }
+    to   { -webkit-transform: rotateX(360deg); }
+}
